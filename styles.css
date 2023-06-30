@@ -1,0 +1,229 @@
+
+
+li {
+    list-style-type: none;
+    display: inline;
+    text-align: center;   
+}
+
+nav {
+
+    border-top: 0.3em solid rgb(18, 146, 135);
+    border-bottom: 0.3em solid rgb(18, 146, 135);
+    margin-left: -10px;
+    margin-right: -10px;
+
+    background-color: rgb(18, 146, 135);
+    font-weight:bold;
+    text-align: center;
+
+    /*text-align: center;*/
+}
+
+nav ul{
+    padding:0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+nav ul li{
+    padding: 1em;
+    min-width: 12%;
+    margin: 0.25em;
+    list-style-type: none;
+}
+
+a {
+    display: inline;
+    
+
+    /*border:1px solid #466995;
+    border-radius: 10px;
+    box-shadow: 4px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    background-color: #C0D6DF;
+    color: #810e6c; */
+
+    text-decoration: none;/*cursors*/
+    cursor: pointer; /*cursors*/
+
+    border: 1px solid rgb(111, 72, 173);/*Skeuomorphic button before active*/
+    border-radius: 7px;/*Skeuomorphic button before active*/
+    box-shadow: 0px 4px; /*should have an offset-x of 0px and an offset-y of 4px.*//*Skeuomorphic button before active*/
+    background-color: rgb(26, 197, 103);
+    color: rgb(203, 113, 61);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+    color:orange;/*hover*/
+
+}
+a:visited{
+    color:rgb(23, 51, 167);/*when visited color changed to pink*/
+}
+
+a:active{
+    margin-top: 24px; /*Skeuomorphic button after active*/
+    margin-bottom: 16px;/*Skeuomorphic button after active*/
+    box-shadow: 0px 0px;/*Skeuomorphic button after active*/
+    color: rgb(208, 193, 27);/*when clciking on the button and it gets avtive color changed to bkack*/
+}
+
+main{
+    border-top: 0.3em solid rgb(203, 113, 61);
+    border-bottom:0.3em solid rgb(203, 113, 61); 
+    margin-left: -10px;
+    margin-right: -10px;
+  
+    background-color:rgb(203, 113, 61);
+    background-size: cover;
+    height:2060px;
+  
+
+}
+
+h2 {
+    /*border-top: 3px solid black;
+    border-bottom: 3px solid black;*/
+    
+    
+    padding: 30px;
+    margin-top: 150px;
+    color: rgb(230, 162, 123);
+   
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(25, 128, 111);
+}
+
+h3,h4{
+    color: aliceblue;
+    margin-left: 15px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+#shoes {
+    box-shadow: none;
+    border: none;
+    background-color: rgb(203, 113, 61);
+    color:rgb(8, 8, 142);
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+#text{   
+   
+    margin-top: 20%;
+    margin-bottom: 100px;
+}
+
+div img{
+    width:100%;
+    height:auto;    
+}
+
+.parent{
+    display: flex;
+    gap: 20px;
+   
+   
+    
+}
+.parentt {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 5px;
+   
+
+   
+}
+
+.meet {
+   
+    margin-top: 50px;
+    padding-bottom: 80px;
+    text-align:center;
+    background-color: rgb(25, 123, 129);
+    color: rgb(242, 242, 10);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    
+}
+
+
+.parentt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    align-items: flex-end;
+    align-items: flex-start;
+}
+
+
+.join {
+    display: flex;
+    justify-content: center; /*this took the image to the center*/
+    align-items: center;/*this takes the figcaptionto the center of it place started*/
+    flex-wrap: wrap;/*this takes the figcaption bellow the image*/
+    flex-direction: column;/*this takes the figcaption bellow the image*/
+    
+}
+
+figcaption{
+    color: rgb(233, 233, 27);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+
+/*begin mobile*/
+@media screen and (max-width:640px){
+    nav ul li{
+        display:inline-block;
+        padding: 0%;
+        
+    }
+    .meet{
+        text-justify:none;
+        font-size: smaller;
+        text-align: center;     
+    }
+
+    .join img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;   
+     }
+
+     main{
+        height: 50%;
+     }
+
+}
+/*end mobile*/
+
+/*begin tablet*/
+@media screen and (min-width:641px){
+    nav ul li{
+        display:inline-block;
+
+    }
+    .meet{
+        text-justify:none;
+        font-size: smaller;
+        text-align: center;     
+    }
+
+   
+
+}
+/*end tablet*/
+
+
+
